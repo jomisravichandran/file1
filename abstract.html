@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: 25px;
+            padding-top: 15px;
+        }
+
+        .main1 {
+            display: flex;
+            flex-direction: flex end;
+            margin-left: 40%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .main2 {
+            display: flex;
+            flex-direction: flex end;
+            margin-left: 30px;
+        }
+
+        .main2 button {
+            background-color: #4C5FD5;
+            border-radius: 10px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+
+        .main1 button {
+            color: white;
+            background-color: #696a72;
+            border-radius: 10px;
+            width: 130px;
+            cursor: pointer;
+        }
+
+        .help {
+            text-align: center;
+            font-size: xx-large;
+            padding-top: 120px;
+            background-color: #DADBF1;
+        }
+
+        input {
+            height: 50px;
+            width: 580px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        img {
+            height: 70px;
+        }
+
+        .grid {
+            padding-top: 150px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        span {
+            color: blue;
+        }
+
+        .griditem {
+            font-size: 20px;
+            margin-bottom: 80px;
+            margin-left: 80px;
+            padding-left: 20px;
+            padding-right: 45px;
+        }
+
+        .end {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            color: white;
+            background-color: black;
+        }
+
+        .ended {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            line-height: 28px;
+            padding-left: 50%;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .box {
+            display: flex;
+            grid-template-columns: auto auto;
+            size-adjust: 20px;
+        }
+
+        .fixed-bottom-left {
+            position: fixed;
+            bottom: 0;
+            right: 50px;
+            margin: 0;
+            padding: 10px;
+            background-color: #337fbd;
+            border-radius: 10px;
+            color: white;
+            z-index: 1000;
+            max-height: 35px;
+            max-width: 100%;
+            border-radius: 100px;
+            display: flex;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media only screen and (min-width: 720px) and (max-width:1000px) {
+            h1 {
+                font-size: larger;
+                margin-left: 0;
+            }
+
+            .main1 {
+                margin-left: 5%;
+            }
+
+            svg {
+                width: 10px;
+            }
+
+            button {
+                display: none;
+            }
+
+            .grid {
+                font-size: x-large;
+                margin-right: 0%;
+            }
+        }
+
+        @media screen and (max-width : 700px) {
+            h1 {
+                font-size: larger;
+                margin-left: 0;
+            }
+
+            .main1 {
+                margin-left: 5%;
+            }
+
+            svg {
+                width: 10px;
+            }
+
+            button {
+                display: none;
+            }
+            .grid {
+                grid-template-columns: auto;
+                text-align: center;
+                font-size: 10px;
+                width: 60px;
+            }
+            input{
+                width: 150px;
+                height: 20px;
+            }
+            .help{
+                margin-right: 190px;
+                font-size: medium;
+            }
+            .main{
+                margin-left: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D9D9D9">
+            <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+        </svg>
+        <h1>Abstract | Help Center</h1>
+
+        <div class="main1">
+            <button>Submit a request</button>
+        </div>
+        <div class="main2">
+            <button>Sign in</button>
+
+        </div>
+    </div>
+
+    <div class="help">
+        <h1>How can we help?</h1>
+        <div id="input">
+            <input type="text" value="Search" readonly>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="griditem">
+            <div class="box">
+                <div class="image">
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D4GACXWCRKK6JHQ730XD" alt="">
+                </div>
+                <div class="content">
+                    <h3>Using Abstract</h3>
+                    <br>
+                    <p>Abstract lets you manage, version, <br> and document your designs in one <br> place. <br> <br>
+                        <a href=""><span>Learn More →</p></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="griditem">
+            <div class="box">
+                <div class="image">
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D45NKFCN3388ZCBJB878" alt="">
+                </div>
+                <div class="content">
+                    <h3>Manage your account</h3>
+                    <br>
+                    <p>Configure your account settings, <br> such as your email, profile details, <br> and password. <br> <br>
+                        <a href=""><span>Learn More →</p></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="griditem">
+            <div class="box">
+                <div class="image">
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D3M8CRR0C2V5GREVR6HK" alt="">
+                </div>
+                <div class="content">
+                    <h3>Manage organizations, teams, <br> and projects</h3>
+                    <br>
+                    <p>Use Abstract organizations, <br> teams, and projects to organize <br> your people and your work. <br> <br>
+                        <a href=""><span>Learn More →</p></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="griditem">
+            <div class="box">
+                <div class="image">
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D38K1S1M9WKWSQZE62YE" alt="">
+                </div>
+                <div class="content">
+                    <h3>Manage billing</h3>
+                    <br>
+                    <p>Change subscriptions and <br> payment details. <br> <br>
+                        <a href=""><span>Learn More →</p></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="griditem">
+            <div class="box">
+                <div class="image">
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D3S3QY5190TZE3H8ZSVK" alt="">
+                </div>
+                <div class="content">
+                    <h3>Authenticate to Abstract</h3>
+                    <br>
+                    <p>Set up and configure SSO, SCIM, <br> and Just-in-Time provisioning. <br> <br>
+                        <a href=""><span>Learn More →</p></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="griditem">
+            <div class="box">
+                <div class="image">
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D3G4S2K93BN3WJPT8600" alt="">
+                </div>
+                <div class="content">
+                    <h3>Abstract support</h3>
+                    <br>
+                    <p>Get in touch with a human. <br> <br>
+                        <a href=""><span>Learn More →</p></span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="end">
+        <div class="ended">
+            <h3>Abstract</h3>
+            <a href=""><h5>Start Trial</h5></a>
+            <a href=""> <h5>Pricing</h5></a>
+            <a href=""><h5>Download</h5>
